@@ -56,10 +56,12 @@ img{
     text-align: center;
     font-weight: 900;
     transition: background-color .3s ease-out;
+    border: none;
 }
 
 .btn:hover{
     background-color: #769c02;
+    cursor: pointer;
 }
 
 /* utilidades */
@@ -323,4 +325,42 @@ img{
     height: 40rem;
     width: 40rem;
     object-fit: cover;
+}
+
+/* formulario */
+.formulario{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.formulario fieldset{
+    border: 1px solid #000;
+    margin-bottom: 2rem;
+}
+
+.formulario legend{
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo label{
+    flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
 }
